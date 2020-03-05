@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Material Responsive Tab Bar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+  <body class="mdc-typography">
+    <aside class="mdc-drawer mdc-drawer--modal">
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a class="mdc-list-item mdc-list-item--activated overview-item" href="#" aria-selected="true">
+            <span class="mdc-list-item__text">Overview</span>
+          </a>
+          <a class="mdc-list-item accounts-item" href="#">
+            <span class="mdc-list-item__text">Accounts</span>
+          </a>
+          <a class="mdc-list-item bills-item" href="#">
+            <span class="mdc-list-item__text">Bills</span>
+          </a>
+          <a class="mdc-list-item budget-item" href="#">
+            <span class="mdc-list-item__text">Budget</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+    
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section">
+            <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+            <div class="mdc-tab-bar" role="tablist">
+              <div class="mdc-tab-scroller mdc-tab-scroller--align-center">
+                <div class="mdc-tab-scroller__scroll-area">
+                  <div class="mdc-tab-scroller__scroll-content">
+
+                    <button id="overview-tab" class="mdc-tab mdc-tab--min-width mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Overview</span>
+                      </span>
+                      <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+
+                    <button id="accounts-tab" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Accounts</span>
+                      </span>
+                      <span class="mdc-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+
+                    <button id="bills-tab" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Bills</span>
+                      </span>
+                      <span class="mdc-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+
+                    <button id="budget-tab" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Budget</span>
+                      </span>
+                      <span class="mdc-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="mdc-top-app-bar--fixed-adjust">
+          <section id="overview-content" class="content-section">
+            <h1 class="mdc-typography--headline3">
+              Responsive navigation using tabs and drawer
+            </h1>
+            <p>
+              This simple navigation template uses Material Components for the Web to implement tabs in a top app bar for screens wider than 500px
+              and a modal drawer for screens narrower than 500px. Check it out by resizing the width of your browser window!
+            </p>
+            <p>
+              Read more about the Material Design <a href="https://material.io/design/layout/responsive-layout-grid.html">responsive layout grid</a>.
+            </p>
+          </section>
+
+          <section id="accounts-content" class="content-section">
+            <h1 class="mdc-typography--headline3">
+              Accounts
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+
+          <section id="bills-content" class="content-section">
+            <h1 class="mdc-typography--headline3">
+              Bills
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+
+          <section id="budget-content" class="content-section">
+            <h1 class="mdc-typography--headline3">
+              Budget
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+        </div>
+      </main>
+    </div>
+    
+    <!-- import the Material javascript file -->
+    <script src="bundle.js" async></script>
+  </body>
+</html>

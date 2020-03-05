@@ -1,0 +1,65 @@
+// Import the styles for each MDC Web component
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/typography/mdc-typography";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+
+// This sets all <p> elements with Material body1 typography styles
+// Check out the MDC Web documentation for how to use MDC Typography Sass mixins:
+// https://github.com/material-components/material-components-web/tree/master/packages/mdc-typography
+p {
+  @include mdc-typography(body1);
+}
+
+body {
+  background: #f5f5f5;
+  margin: 0;
+  display: flex;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+  margin: 0 10vw;
+}
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color-accessible(white);
+  @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.6));
+}
+
+#accounts-content, #bills-content, #budget-content {
+  display: none;
+}
+
+.mdc-top-app-bar__navigation-icon {
+  display: none;
+}
+
+// Fill the height of the top app bar with the tab bar
+
+.mdc-top-app-bar__section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mdc-tab-bar, .mdc-tab-scroller, .mdc-tab-scroller__scroll-area, .mdc-tab {
+  height: 100%;
+}
+
+// BREAKPOINT for viewport widths <500px
+
+@media (max-width: 500px) {
+  .mdc-top-app-bar__navigation-icon {
+    display: block;
+  }
+
+  .mdc-tab-bar {
+    display: none;
+  }
+}
+
